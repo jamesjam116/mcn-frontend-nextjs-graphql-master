@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #333;
+}
+.container {
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: 1180px) {
+        max-width: calc(100% - 32px);
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}
+a {
+    transition: all 0.3s;
+    &:hover {
+        color: $primary-color;
+    }
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    .logo {
+        .logo-text {
+            margin-left: 10px;
+        }
+        span {
+            font-size: 32px;
+            font-weight: 800;
+            text-decoration: none;
+            color: $primary-color;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+}
+.header-action {
+    display: flex;
+    button {
+        margin-left: 20px;
+    }
+}
+.display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage {
+    min-height: 100vh;
+    h1 {
+        font-size: 56px;
+    }
+}
+.content-card {
+    box-shadow: 50px 30px 90px rgb(192 207 217 / 90%), -50px -30px 90px rgb(247 249 251 / 60%);
+    padding: 48px;
+    border-radius: 24px;
+}
+.main {
+    min-height: 100vh;
+}
+.sign-card {
+    width: 480px;
+    h3 {
+        font-size: 18px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    a {
+        color: #777;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    p {
+        color: #777;
+        font-size: 14px;
+    }
+}
+.form-control {
+    margin: 16px 0;
+}
+
+.card-splite {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.card-center {
+    margin: 8px 0;
+}
